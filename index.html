@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Document Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>HTML DOCUMENT EDITOR</h2>
+    </div>
+    <div class="toolbar">
+      <!-- Dropdown menu for Font-Family -->
+      <select id="font-family">
+        <option value="" disabled selected>Font Family</option>
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+      <!-- Dropdown menu for Font-Size -->
+      <select id="font-size">
+        <option value="" disabled selected>Font Size</option>
+        <option value="12">12</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="22">22</option>
+        <option value="24">24</option>
+        <option value="26">26</option>
+        <option value="28">28</option>
+        <option value="30">30</option>
+      </select>
+      <!-- Buttons for other Functionaliy -->
+      <button id="left-justify">Left</button>
+      <button id="right-justify">Right</button>
+      <button id="save-file">Save</button>
+      <button id="open-file">Open</button>
+      <button id="format-button">Box size</button>
+      <button id="stats">Document Statistics</button>
+      <!-- Dropdown menu for Font-Style -->
+      <select id="format-select">
+        <option value="" disabled selected>Font Style</option>
+        <option value="bold">Bold</option>
+        <option value="italic">Italic</option>
+        <option value="sup">Superscript</option>
+        <option value="sub">Subscript</option>
+      </select>
+      <!-- For importing image -->
+      <input type="file" id="image-input" />
+    </div>
+
+    <div contenteditable="true" id="document"></div>
+    <input type="file" id="file-input" style="display: none" />
+    <script src="script.js"></script>
+  </body>
+</html>
